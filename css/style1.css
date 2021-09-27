@@ -838,8 +838,7 @@ Skill Section CSS
   justify-content: space-around;
   height: 200px;
   /* align-items: center; */
-  /* height: 120px;
-  width: 516px; */
+  /* height: 120px;*/
 }
 .skill-section .skill-inner .inner-title {
   font-size: 20px;
@@ -849,19 +848,25 @@ Skill Section CSS
 
 .skill-section .skill-language {
   text-align: center;
-  flex: 33%;
+  flex: 50%;
   background-color: var(--bg-black-50);
   /* max-width: 30%; */
 }
 .skill-section .skill-system {
   /* max-width: 30%; */
   text-align: center;
-  flex: 33%;
+  flex: 50%;
 }
 .skill-section .skill-tool {
   /* max-width: 30%; */
   text-align: center;
-  flex: 34%;
+  flex: 50%;
+  /* background-color: var(--bg-black-50); */
+}
+.skill-section .skill-certificate {
+  /* max-width: 30%; */
+  text-align: center;
+  flex: 50%;
   background-color: var(--bg-black-50);
 }
 .list li {
@@ -1161,6 +1166,9 @@ Education section CSS
   }
   .education-section .undergraduate {
     flex: 100%;
+  }
+  .education-section {
+    padding-top: 50rem;
   }
 }
 
