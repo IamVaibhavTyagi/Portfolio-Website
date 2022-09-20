@@ -5,23 +5,26 @@
 /*-----Global Style-------*/
 /* define custom css variables*/
 :root {
-  --bg-black-900: #000000;
-  --bg-black-100: #dddddd;
-  --bg-black-50: #eff0f4;
-  --text-black-900: #000000;
-  --text-black-700: #555555;
-  --text-black-600: #666666;
-  --text-black-300: #bbbbbb;
+  --bg-black-900: #37B4EA;
+  --bg-black-100: #53BEED;
+  --bg-black-50: #E2F4FC;
+  --bg-black-10: #F4FBFE;
+  --text-black-900: #1AA9E7;
+  --text-black-700: #37B4EA;
+  /* --text-black-600: #53BEED; */
+  --text-black-300: #70C9F0;
   --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
   --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
-  --skin-color: #fb839e;
+  --skin-color: #1AA9E7;
+  
 }
 body {
   font-size: 16px;
   line-height: 1.5;
   overflow-x: hidden;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-black-10);
+  
 }
 
 *:not(i) {
@@ -152,7 +155,7 @@ Header Section - Navigation bar CSS
   transition: all 0.3s ease;
 }
 .navbar-toggle:active {
-  background-color: var(--text-black-300);
+  /* background-color: var(--text-black-300); */
   transition: all 0.3s ease;
 }
 
@@ -373,6 +376,7 @@ Home page CSS
 .home-section {
   position: relative;
   padding: 6rem 0;
+  background-color: var(--bg-black-10);
 }
 .home-section .full-screen {
   /* padding: 50px 0; */
@@ -707,6 +711,7 @@ About section CSS
   margin-bottom: 5%;
   change margin for mobile screens 
 }*/
+
 .about-section h2 {
   color: var(--text-black-700);
   font-weight: 600;
@@ -765,7 +770,7 @@ About section CSS
   text-align: center;
   font-size: 16px;
   line-height: 40px;
-  color: var(--text-black-600);
+  color: var(--text-black-700);
   border-radius: 50%;
   transition: all 0.3s ease;
   margin: 0 4px;
@@ -849,7 +854,7 @@ Skill Section CSS
 .skill-section .skill-language {
   text-align: center;
   flex: 50%;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-black-10);
   /* max-width: 30%; */
 }
 .skill-section .skill-system {
@@ -867,7 +872,7 @@ Skill Section CSS
   /* max-width: 30%; */
   text-align: center;
   flex: 50%;
-  background-color: var(--bg-black-50);
+  background-color: var(--bg-black-10);
 }
 .list li {
   font-size: 16px;
@@ -915,8 +920,30 @@ Experience Section CSS
   padding: 0 0;
 }
 
+.experience-section .experience-details-2 {
+  background-color: var(--bg-black-10);
+  max-width: 100%;
+  padding: 30px 60px;
+}
+.experience-details-2 .company {
+  font-weight: 900;
+  color: var(--text-black-700);
+}
+.experience-details-2 .date {
+  font-weight: 700;
+  color: var(--text-black-600);
+}
+.experience-details-2 .description {
+  margin-top: 20px;
+}
+.experience-details-2 .description li {
+  /* line-height: 10px; */
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .experience-section .experience-details-1 {
-  background-color: var(--bg-black-50);
+  background-color: white;
   max-width: 100%;
   padding: 30px 60px;
 }
@@ -950,6 +977,7 @@ Project section CSS
   padding-bottom: 8rem;
   margin-top: 8%;
   margin-bottom: 4%;
+  background-color: var(--bg-black-10);
 }
 
 .project-section .project-container {
